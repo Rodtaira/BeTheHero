@@ -8,6 +8,6 @@ routes.post('/ongs', ongController.createOng)
 
 routes.post('/incidents', incidentController.createIncident)
 routes.get('/incidents', incidentController.listIncidents)
-
+routes.delete('/incidents/:id', incidentController.deleteIncident)
 
 module.exports = routes
