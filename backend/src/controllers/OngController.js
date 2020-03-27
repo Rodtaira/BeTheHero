@@ -5,10 +5,10 @@ module.exports = {
 
     async listOngs(req, res){
 
-        console.log('entrou em list ')
         const ongs = await connection('ongs').select('*')
     
-        return res.json(ongs)},
+        return res.json(ongs)
+    },
 
     async createOng(req, res) {
         const {name, email, whatsapp, city, uf} = req.body
